@@ -1,0 +1,108 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variaveils */
+
+:root{
+    --primary-color: #CBDBFF;
+    --seconde-color: #1678FF;
+    --test-color: #9E9E9E;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 16px;
+    --font-weight: 400;
+    --line-height: 1.5;
+    --letter-spacing: 0.5px;
+}
+
+/* Reset CSS - Remover estilos padrões dos navegadores */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    line-height: 1.6;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 8px;
+  margin: 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* class */
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.center-image{
+    background-size: cover;
+    background-position: center;
+}
