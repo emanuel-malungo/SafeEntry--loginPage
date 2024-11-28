@@ -13,28 +13,35 @@
 <body>
 
     <form id="content-form" class="content__form" >
-        <div class="form__image" id="form__image" >
-            <img src="./assets/img/Fingerprint-cuate.svg" alt="">
-        </div>
-        <div class="forms" >
-            <di class="forms__header">
-                <h1 class="forms__title" >Sign In</h1>
-                <p class="forms__text" >Unlock you world.</p>
-            </di>
-            <div>
-                <div class="" >
-                    <label for="email"><span style="color: red;" >*</span>Email</label>
-                    <input type="text" placeholder="Enter your email">
+        <div class="container" >
+            <div class="form__image" id="form-image" >
+                <img class="center-image" src="./assets/img/Fingerprint-cuate.svg" alt="">
+                <div class="image__forgot" >
+                    <a href="#">Forgot password!</a>
                 </div>
-                <div class="" >
-                    <label for="email"><span style="color: red;" >*</span>Password</label>
-                    <div>
+            </div>
+            <div class="forms" >
+                <di class="forms__header">
+                    <h1 class="forms__title" >Sign In</h1>
+                    <p class="forms__text" >Unlock you world.</p>
+                </di>
+                <div class="groups_input" >
+                    <div class="group_input" >
+                        <label for="email"><span style="color: red;" >*</span>Email</label>
                         <input type="text" placeholder="Enter your email">
-                        <i class="ri-eye-off-line"></i>
+                    </div>
+                    <div class="group_input" >
+                        <label for="email"><span style="color: red;" >*</span>Password</label>
+                        <div>
+                            <input type="text" placeholder="Enter your email">
+                            <i class="ri-eye-off-line"></i>
+                        </div>
+                    </div>
+                    <div class="btns__forms" >
+                        <button class="btn_signIn" id="btn-seigIn" >Sign In</button>
+                        <button class="btn_create_acoccount" id="btn-create-acoccount" >Create an account</button>
                     </div>
                 </div>
-                <button class="btn_signIn" id="btn-seigIn" >Sign In</button>
-                <button class="btn_create_acoccount" id="btn-create-acoccount" >Create an account</button>
             </div>
         </div>
     </form>

@@ -7,6 +7,8 @@
 :root{
     --primary-color: #CBDBFF;
     --seconde-color: #1678FF;
+    --bg-content-form: #FFFFFF;
+    --color-border: #ccc;
     --test-color: #9E9E9E;
     --font-family: 'Poppins', sans-serif;
     --font-size: 16px;
@@ -28,7 +30,10 @@
 body {
     width: 100%;
     height: 100vh;
+    display: flex;
     line-height: 1.6;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-family);
     background-color: var(--primary-color);
 }
@@ -75,7 +80,7 @@ select {
     border-radius: 5px;
     font-size: inherit;
     font-family: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
 }
 
 button {
@@ -100,9 +105,122 @@ form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
 }
 
 .center-image{
     background-size: cover;
     background-position: center;
+}
+
+/* content form */
+
+.content__form{
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--bg-content-form);
+}
+
+/* container */
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* form image */
+
+.form__image{
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.image__forgot{
+    font-size: 14px;
+    margin-top: -50px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: var(--seconde-color);
+}
+
+/* forms */
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* header */
+
+.forms__header{
+    text-align: center;
+}
+
+.forms__title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.forms__text{
+    margin-bottom: 2rem;
+    color: var(--test-color);
+}
+
+
+.btns_forms{
+    display: flex;
+    flex-direction: column;
+}
+
+/* group_input */
+
+.groups_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.group_input{
+    margin-bottom: 1rem;
+}
+
+.group_input label{
+    margin-bottom: 0.5rem;
+}
+
+.groups_input div{
+    position: relative;
+}
+.groups_input div input{
+    padding-right: 50px;
+}
+
+.groups_input div i{
+    top: 20%;
+    right: 20px;
+    position: absolute;
+}
+
+/* buttons */
+
+.btn_signIn{
+    width: 100%;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--seconde-color);
+}
+
+.btn_create_acoccount{
+    width: 100%;
+    border: 1px solid var(--color-border);
 }
